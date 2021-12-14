@@ -61,7 +61,7 @@ app.get('/weather', (req, res) => {
                 });
             }
             res.send({
-                forecast: `It is ${weathr.temp_c} degree.It feels like ${weathr.feelslike_c}.`,
+                forecast: `It is ${weathr.temp_c} degree.It feels like ${weathr.feelslike_c}. The humidity is ${weathr.humidity}%.`,
                 location
             });
         });
